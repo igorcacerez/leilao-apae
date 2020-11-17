@@ -2,6 +2,7 @@
 
     <!-- CONTEUDO -->
     <div class="main-wrapper">
+
         <header class="header-area transparent-bar section-padding-1">
             <div class="container-fluid">
                 <div class="header-large-device">
@@ -56,7 +57,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                                    <a href="index.html"><img src="<?= BASE_URL; ?>assets/theme/site/images/logo/logo.png" alt="logo"></a>
                                 </div>
                             </div>
                             <div class="col-xl-8 col-lg-7">
@@ -106,7 +107,7 @@
                                                                 </ul>
                                                             </li>
                                                             <li>
-                                                                <a href="shop.html"><img src="assets/images/banner/banner-12.png" alt=""></a>
+                                                                <a href="shop.html"><img src="<?= BASE_URL; ?>assets/theme/site/images/banner/banner-12.png" alt=""></a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -173,7 +174,7 @@
                         <div class="col-5">
                             <div class="mobile-logo">
                                 <a href="index.html">
-                                    <img alt="" src="assets/images/logo/logo.png">
+                                    <img alt="" src="<?= BASE_URL; ?>assets/theme/site/images/logo/logo.png">
                                 </a>
                             </div>
                         </div>
@@ -199,6 +200,7 @@
                 </div>
             </div>
         </header>
+
         <!-- mini cart start -->
         <div class="sidebar-cart-active">
             <div class="sidebar-cart-all">
@@ -208,7 +210,7 @@
                     <ul>
                         <li class="single-product-cart">
                             <div class="cart-img">
-                                <a href="#"><img src="assets/images/cart/cart-1.jpg" alt=""></a>
+                                <a href="#"><img src="<?= BASE_URL; ?>assets/theme/site/images/cart/cart-1.jpg" alt=""></a>
                             </div>
                             <div class="cart-title">
                                 <h4><a href="#">Simple Black T-Shirt</a></h4>
@@ -220,7 +222,7 @@
                         </li>
                         <li class="single-product-cart">
                             <div class="cart-img">
-                                <a href="#"><img src="assets/images/cart/cart-2.jpg" alt=""></a>
+                                <a href="#"><img src="<?= BASE_URL; ?>assets/theme/site/images/cart/cart-2.jpg" alt=""></a>
                             </div>
                             <div class="cart-title">
                                 <h4><a href="#">Norda Backpack</a></h4>
@@ -241,6 +243,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Mobile menu start -->
         <div class="mobile-header-active mobile-header-wrapper-style">
             <div class="clickalbe-sidebar-wrap">
@@ -368,6 +371,7 @@
                 </div>
             </div>
         </div>
+
         <div class="slider-area bg-gray">
             <div class="hero-slider-active-1 hero-slider-pt-1 nav-style-1 dot-style-1">
                 <div class="single-hero-slider single-animation-wrap">
@@ -385,7 +389,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="hero-slider-img-1 slider-animated-1">
-                                    <img class="animated" src="assets/images/slider/hm-1-slider-1.png" alt="">
+                                    <img class="animated" src="<?= BASE_URL; ?>assets/theme/site/images/slider/hm-1-slider-1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -406,7 +410,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="hero-slider-img-1 slider-animated-1">
-                                    <img class="animated" src="assets/images/slider/hm-1-slider-1.png" alt="">
+                                    <img class="animated" src="<?= BASE_URL; ?>assets/theme/site/images/slider/hm-1-slider-1.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -414,6 +418,7 @@
                 </div>
             </div>
         </div>
+
         <div class="service-area">
             <div class="container">
                 <div class="service-wrap">
@@ -466,13 +471,14 @@
                 </div>
             </div>
         </div>
+
         <div class="about-us-area pt-85">
             <div class="container">
                 <div class="border-bottom-1 about-content-pb">
                     <div class="row">
                         <div class="col-lg-3 col-md-3">
                             <div class="about-us-logo">
-                                <img src="assets/images/about/logo.png" alt="logo">
+                                <img src="<?= BASE_URL; ?>assets/theme/site/images/about/logo.png" alt="logo">
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-9">
@@ -488,6 +494,7 @@
                 </div>
             </div>
         </div>
+
         <div class="product-area section-padding-1 pt-115 pb-75">
             <div class="container">
                 <div class="section-title-tab-wrap mb-45">
@@ -510,7 +517,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-1.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-1.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -539,7 +546,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-2.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-2.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -568,7 +575,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-3.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-3.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-red">-20%</span>
                                         <div class="product-action-wrap">
@@ -599,7 +606,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-4.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-4.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -628,7 +635,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-5.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-5.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-red">-15%</span>
                                         <div class="product-action-wrap">
@@ -659,7 +666,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-6.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-6.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -688,7 +695,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-7.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-7.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -717,7 +724,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-8.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-8.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-black">Out of stock</span>
                                         <div class="product-action-wrap">
@@ -751,7 +758,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-8.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-8.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -780,7 +787,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-7.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-7.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -809,7 +816,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-6.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-6.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-red">-20%</span>
                                         <div class="product-action-wrap">
@@ -840,7 +847,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-5.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-5.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -869,7 +876,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-4.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-4.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-red">-15%</span>
                                         <div class="product-action-wrap">
@@ -900,7 +907,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-3.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-3.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -929,7 +936,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-2.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-2.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -958,7 +965,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-1.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-1.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-black">Out of stock</span>
                                         <div class="product-action-wrap">
@@ -992,7 +999,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img class="default-img" src="assets/images/product/product-4.jpg" alt="">
+                                            <img class="default-img" src="<?= BASE_URL; ?>assets/theme/site/images/product/product-4.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -1021,7 +1028,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-3.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-3.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -1050,7 +1057,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-2.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-2.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-red">-20%</span>
                                         <div class="product-action-wrap">
@@ -1081,7 +1088,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-1.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-1.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -1110,7 +1117,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-8.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-8.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-red">-15%</span>
                                         <div class="product-action-wrap">
@@ -1141,7 +1148,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-7.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-7.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -1170,7 +1177,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-6.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-6.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -1199,7 +1206,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-5.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-5.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-black">Out of stock</span>
                                         <div class="product-action-wrap">
@@ -1233,7 +1240,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-6.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-6.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -1262,7 +1269,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-7.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-7.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -1291,7 +1298,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-8.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-8.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-red">-20%</span>
                                         <div class="product-action-wrap">
@@ -1322,7 +1329,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-5.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-5.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -1351,7 +1358,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-4.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-4.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-red">-15%</span>
                                         <div class="product-action-wrap">
@@ -1382,7 +1389,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-3.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-3.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -1411,7 +1418,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-2.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-2.jpg" alt="">
                                         </a>
                                         <div class="product-action-wrap">
                                             <div class="product-action-left">
@@ -1440,7 +1447,7 @@
                                 <div class="single-product-wrap mb-35">
                                     <div class="product-img product-img-zoom mb-20">
                                         <a href="product-details.html">
-                                            <img src="assets/images/product/product-1.jpg" alt="">
+                                            <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-1.jpg" alt="">
                                         </a>
                                         <span class="pro-badge left bg-black">Out of stock</span>
                                         <div class="product-action-wrap">
@@ -1471,6 +1478,7 @@
                 </div>
             </div>
         </div>
+
         <div class="banner-area pb-85">
             <div class="container">
                 <div class="section-title mb-45">
@@ -1480,7 +1488,7 @@
                     <div class="col-lg-7 col-md-7">
                         <div class="banner-wrap banner-mr-1 mb-30">
                             <div class="banner-img banner-img-zoom">
-                                <a href="product-details.html"><img src="assets/images/banner/banner-1.jpg" alt=""></a>
+                                <a href="product-details.html"><img src="<?= BASE_URL; ?>assets/theme/site/images/banner/banner-1.jpg" alt=""></a>
                             </div>
                             <div class="banner-content-1">
                                 <h2>Zara Pattern Boxed <br>Underwear</h2>
@@ -1494,7 +1502,7 @@
                     <div class="col-lg-5 col-md-5">
                         <div class="banner-wrap  banner-ml-1 mb-30">
                             <div class="banner-img banner-img-zoom">
-                                <a href="product-details.html"><img src="assets/images/banner/banner-2.jpg" alt=""></a>
+                                <a href="product-details.html"><img src="<?= BASE_URL; ?>assets/theme/site/images/banner/banner-2.jpg" alt=""></a>
                             </div>
                             <div class="banner-content-2">
                                 <h2>Basic Color Caps</h2>
@@ -1505,14 +1513,15 @@
                 </div>
             </div>
         </div>
+
         <div class="instagram-area">
             <div class="container">
                 <div class="section-title-tag-wrap mb-45">
                     <div class="section-title">
-                        <h2>Our Instagram</h2>
+                        <h2>Nosso Instagram  &#128512;</h2>
                     </div>
                     <div class="instagram-tag">
-                        <span>#monkeylover</span>
+                        <span>#apaebirigui</span>
                     </div>
                 </div>
                 <div class="instagram-wrap">
@@ -1521,61 +1530,14 @@
                 </div>
             </div>
         </div>
-        <div class="brand-logo-area pt-100 pb-100">
-            <div class="container">
-                <div class="brand-logo-wrap brand-logo-mrg">
-                    <div class="single-brand-logo mb-10">
-                        <img src="assets/images/brand-logo/brand-logo-1.png" alt="brand-logo">
-                    </div>
-                    <div class="single-brand-logo mb-10">
-                        <img src="assets/images/brand-logo/brand-logo-2.png" alt="brand-logo">
-                    </div>
-                    <div class="single-brand-logo mb-10">
-                        <img src="assets/images/brand-logo/brand-logo-3.png" alt="brand-logo">
-                    </div>
-                    <div class="single-brand-logo mb-10">
-                        <img src="assets/images/brand-logo/brand-logo-4.png" alt="brand-logo">
-                    </div>
-                    <div class="single-brand-logo mb-10">
-                        <img src="assets/images/brand-logo/brand-logo-5.png" alt="brand-logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="subscribe-area bg-gray pt-115 pb-115">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-5">
-                        <div class="section-title">
-                            <h2>keep connected</h2>
-                            <p>Get updates by subscribe our weekly newsletter</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-7">
-                        <div id="mc_embed_signup" class="subscribe-form">
-                            <form id="mc-embedded-subscribe-form" class="validate subscribe-form-style" novalidate="" target="_blank" name="mc-embedded-subscribe-form" method="post" action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef">
-                                <div id="mc_embed_signup_scroll" class="mc-form">
-                                    <input class="email" type="email" required="" placeholder="Enter your email address" name="EMAIL" value="">
-                                    <div class="mc-news" aria-hidden="true">
-                                        <input type="text" value="" tabindex="-1" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
-                                    </div>
-                                    <div class="clear">
-                                        <input id="mc-embedded-subscribe" class="button" type="submit" name="subscribe" value="Subscribe">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer-area bg-gray pb-30">
+
+        <footer class="footer-area bg-gray pb-30 pt-50">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="contact-info-wrap">
                             <div class="footer-logo">
-                                <a href="#"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                                <a href="#"><img src="<?= BASE_URL; ?>assets/theme/site/images/logo/logo.png" alt="logo"></a>
                             </div>
                             <div class="single-contact-info">
                                 <span>Our Location</span>
@@ -1615,6 +1577,7 @@
                 </div>
             </div>
         </footer>
+
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -1627,24 +1590,24 @@
                             <div class="col-lg-5 col-md-6 col-12 col-sm-12">
                                 <div class="tab-content quickview-big-img">
                                     <div id="pro-1" class="tab-pane fade show active">
-                                        <img src="assets/images/product/product-1.jpg" alt="">
+                                        <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-1.jpg" alt="">
                                     </div>
                                     <div id="pro-2" class="tab-pane fade">
-                                        <img src="assets/images/product/product-3.jpg" alt="">
+                                        <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-3.jpg" alt="">
                                     </div>
                                     <div id="pro-3" class="tab-pane fade">
-                                        <img src="assets/images/product/product-6.jpg" alt="">
+                                        <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-6.jpg" alt="">
                                     </div>
                                     <div id="pro-4" class="tab-pane fade">
-                                        <img src="assets/images/product/product-3.jpg" alt="">
+                                        <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-3.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="quickview-wrap mt-15">
                                     <div class="quickview-slide-active nav-style-6">
-                                        <a class="active" data-toggle="tab" href="#pro-1"><img src="assets/images/product/quickview-s1.jpg" alt=""></a>
-                                        <a data-toggle="tab" href="#pro-2"><img src="assets/images/product/quickview-s2.jpg" alt=""></a>
-                                        <a data-toggle="tab" href="#pro-3"><img src="assets/images/product/quickview-s3.jpg" alt=""></a>
-                                        <a data-toggle="tab" href="#pro-4"><img src="assets/images/product/quickview-s2.jpg" alt=""></a>
+                                        <a class="active" data-toggle="tab" href="#pro-1"><img src="<?= BASE_URL; ?>assets/theme/site/images/product/quickview-s1.jpg" alt=""></a>
+                                        <a data-toggle="tab" href="#pro-2"><img src="<?= BASE_URL; ?>assets/theme/site/images/product/quickview-s2.jpg" alt=""></a>
+                                        <a data-toggle="tab" href="#pro-3"><img src="<?= BASE_URL; ?>assets/theme/site/images/product/quickview-s3.jpg" alt=""></a>
+                                        <a data-toggle="tab" href="#pro-4"><img src="<?= BASE_URL; ?>assets/theme/site/images/product/quickview-s2.jpg" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -1735,6 +1698,7 @@
             </div>
         </div>
         <!-- Modal end -->
+
     </div>
     <!-- FIM >> CONTEUDO -->
 

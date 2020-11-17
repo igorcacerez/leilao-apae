@@ -317,10 +317,10 @@
     $(window).on('load', function(){
         var instagramFeedSliderOne = function () {
             $.instagramFeed({
-                username: "ecommerce.devitems",
+                username: "apaebirigui",
                 container: "#instagramFeedOne",
                 display_profile: false,
-                'display_biography': false,
+                display_biography: false,
                 display_gallery: true,
                 callback: null,
                 styling: false,
