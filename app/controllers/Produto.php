@@ -44,7 +44,47 @@ class Produto extends Controller
      */
     public function detalhes($id, $url)
     {
-        // CONTEUDO AQUI
+
+        // Variaveis
+        $produtos = null;
+        $imagens = null;
+        $dados = null;
+
+        // Busca o produto
+        $produto = $this->objModelProduto
+            ->get(["id_produto" => $id]);
+
+        if ($produto->rowCount() == 1)
+        {
+            // Busca os dados do produto
+            $produto = $produto->fetch(\PDO::FETCH_OBJ);
+
+            // Busca as imagem do produto
+            $imagens = $this->objModelImagem
+                ->get(["id_produto" => $id])
+                ->fetchAll(\PDO::FETCH_OBJ);
+
+            // Verificando se tem imagem
+            if (!empty($imagens))
+            {
+                // Percorre todas as imagens
+                foreach ($imagens as $imagem)
+                {
+                    // Monta o link da imagem
+                    $imagem->imagem = BASE_STORAGE . "produto/" . $id . "/full/" . $imagem->imagem;
+                }
+            }
+
+            // Array de retorno
+            $dados = [
+                "produto" => $produto,
+                "imagens" => $imagens
+            ];
+
+            // Carrega a view
+            $this->view("site/detalhes", $dados);
+
+        }
 
     } // End >> fun::detalhes()
 

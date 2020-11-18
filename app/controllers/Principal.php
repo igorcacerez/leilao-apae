@@ -93,7 +93,7 @@ class Principal extends CI_controller
                 ->getImagem($produto->id_produto);
 
             // Monta a url
-            $produto->url = BASE_URL . "p/" . $produto->id_produto . "/" . $this->objHelperApoio->urlAmigavel($produto->nome);
+            $produto->url = BASE_URL . "produto/" . $produto->id_produto . "/" . $this->objHelperApoio->urlAmigavel($produto->nome);
         }
 
         // Array de retorno
