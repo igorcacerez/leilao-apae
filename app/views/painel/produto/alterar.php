@@ -160,13 +160,22 @@
                                         <?php endif; ?>
 
                                         <td class="text-center">
-                                            <button data-id="<?= $img->id_imagem; ?>"
-                                                    data-toggle="tooltip"
-                                                    data-original-title="Deletar Imagem"
-                                                    class="deletarImagemProduto btn btn-danger btn-icon btn-sm mr-2">
-                                                <i class="fas fa-window-close"></i>
+                                            <?php if($img->principal != true): ?>
+                                                <button data-id="<?= $img->id_imagem; ?>"
+                                                        data-toggle="tooltip"
+                                                        data-original-title="Deletar Imagem"
+                                                        class="deletarImagemProduto btn btn-danger btn-icon btn-sm mr-2">
+                                                    <i class="fas fa-window-close"></i>
+                                                </button>
 
-                                            </button>
+                                                <button data-id="<?= $img->id_imagem; ?>"
+                                                        data-produto="<?= $produto->id_produto; ?>"
+                                                        class="imagemPrincipal btn btn-primary btn-icon btn-sm mr-2">
+                                                    <i class="fas fa-star"></i>
+                                                </button>
+                                            <?php else: ?>
+                                                -
+                                            <?php endif; ?>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>

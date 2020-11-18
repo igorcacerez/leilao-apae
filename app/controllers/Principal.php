@@ -82,7 +82,7 @@ class Principal extends CI_controller
 
         // Busca os produtos
         $produtos = $this->objModelProduto
-            ->get(null, "id_produto DESC, vendido ASC")
+            ->get(null, "vendido ASC, id_produto DESC")
             ->fetchAll(\PDO::FETCH_OBJ);
 
         // Percorre os produtos encontrados

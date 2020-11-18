@@ -2,7 +2,7 @@
 
 // Nome do App
 define("SITE_NOME", "Leilão Apae");
-define("WHATS", "5518996496255");
+define("WHATS", "5518999999999");
 
 
 /**

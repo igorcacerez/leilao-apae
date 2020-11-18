@@ -43,9 +43,7 @@
                                 <?php foreach ($imagens as $imagem) : ?>
                                     <div class="easyzoom-style">
                                         <div>
-                                            <a href="<?= $imagem->imagem ?>">
-                                                <img width="100%" src="<?= $imagem->imagem ?>" alt="<?= $produto->nome ?>">
-                                            </a>
+                                            <img width="100%" src="<?= $imagem->imagem ?>" alt="<?= $produto->nome ?>">
                                         </div>
                                         <a class="easyzoom-pop-up img-popup" href="<?= $imagem->imagem ?>"><i class="icon-size-fullscreen"></i></a>
                                     </div>
@@ -72,14 +70,18 @@
                     <div class="product-details-content pro-details-content-mrg">
                         <h2 class="mb-2"><?= $produto->nome ?></h2>
                         <p><?= $produto->descricao_curta ?></p>
+
                         <div class="pro-details-price">
-                            <span class="new-price">R$ <?= number_format($produto->valor, 2, ',','.'); ?></span>
+                            <span class="new-price"><?= ($produto->vendido == true) ? '<b style="color: red;">VENDIDO</b>' : 'R$' . number_format($produto->valor, 2, ",","."); ?></span>
                         </div>
-                        <div class="pro-details-action-wrap">
-                            <div class="pro-details-add-to-cart">
-                                <a style="background-color: #06cc84" title="Comprar" href="https://wa.me/<?= WHATS ?>?text=Quero dar um lance no produto (<?=  $produto->nome; ?>)">COMPRAR</a>
+
+                        <?php if($produto->vendido == false): ?>
+                            <div class="pro-details-action-wrap">
+                                <div class="pro-details-add-to-cart">
+                                    <a style="background-color: #06cc84" title="Comprar" href="https://wa.me/<?= WHATS ?>?text=Quero dar um lance no produto (<?=  $produto->nome; ?>)">COMPRAR</a>
+                                </div>
                             </div>
-                        </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
