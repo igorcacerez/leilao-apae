@@ -98,43 +98,39 @@ class Usuario extends Controller
     {
         // Variaveis
         $produto = null;
-        $imagens = null;
         $usuario = null;
-        $dados = null;
+        $user = null;
+
 
         // Seguranca
         $usuario = $this->objHelperApoio->seguranca();
 
-        // Busca o produto
-        $produto = $this->objModelProduto
-            ->get(["id_produto" => $id])
+        // Busca o usuario
+        $user = $this->objModelUsuario
+            ->get(["id_usuario" => $id])
             ->fetch(\PDO::FETCH_OBJ);
 
         // Verifica se existe
-        if(!empty($produto))
+        if(!empty($user))
         {
-            // Busca as imagens
-            $imagens = $this->objModelImgem
-                ->get(["id_produto" => $id])
-                ->fetchAll(\PDO::FETCH_OBJ);
 
             // Retorno
             $dados = [
                 "usuario" => $usuario,
-                "produto" => $produto,
-                "imagens" => $imagens,
+                "user" => $user,
                 "js" => [
-                    "modulos" => ["Produto"]
+                    "modulos" => ["Usuario"]
                 ]
             ];
 
             // Chama a view
-            $this->view("painel/produto/alterar", $dados);
+            $this->view("painel/usuario/alterar", $dados);
         }
         else
         {
             // Pag de addd produto
             $this->adicionar();
+
         } // Inserir produto
 
     } // END >> fun::alterar()
@@ -161,12 +157,12 @@ class Usuario extends Controller
         $dados = [
             "usuario" => $usuario,
             "js" => [
-                "modulos" => ["Produto"]
+                "modulos" => ["Usuario"]
             ]
         ];
 
         // View
-        $this->view("painel/produto/adicionar", $dados);
+        $this->view("painel/usuario/adicionar", $dados);
 
     } // End >> fun::adicionar()
 
@@ -178,80 +174,31 @@ class Usuario extends Controller
      * ------------------------------------------------------------
      * @param $usuario [Usuario logado]
      */
-    public function getPaginaListarProdutos($usuario)
+    public function listar()
     {
         // Variaveis
         $dados = null;
-        $cont = null;
-        $produtos = null;
+        $usuarios = null;
 
-        // Total de produto
-        $total = $this->objModelProduto
-            ->get()
-            ->rowCount();
+        // Seguranca
+        $usuario = $this->objHelperApoio->seguranca();
 
-        // Verifica se possui total
-        $total = (!empty($total) ? $total : 0);
-
-        // Produtos Ativos
-        $cont["produto_ativo"] = $this->objModelProduto
-            ->get(["vendido" => false])
-            ->rowCount();
-
-        // Calcula a porcentagem
-        $cont["produto_ativo_porcentagem"] = ($cont["produto_ativo"] * 100) / $total;
-
-
-        // Produtos vendidos
-        $cont["produto_vendido"] = $this->objModelProduto
-            ->get(["vendido" => true])
-            ->rowCount();
-
-        // Calcula a porcentagem
-        $cont["produto_vendido_porcentagem"] = ($cont["produto_vendido"] * 100) / $total;
-
-
-        // Usuários
-        $cont["usuario"] = $this->objModelUsuario
-            ->get()
-            ->rowCount();
-
-        // Valor Arrecadado
-        $aux = $this->objModelProduto
-            ->get(["vendido" => true], null, null, "SUM(valor) as total")
-            ->fetch(\PDO::FETCH_OBJ);
-
-        $cont["valor"] = $aux->total;
-
-
-        // Busca os produtos
-        $produtos = $this->objModelProduto
+        // Busca todos os usuarios
+        $usuarios = $this->objModelUsuario
             ->get()
             ->fetchAll(\PDO::FETCH_OBJ);
-
-        // Percorre
-        foreach ($produtos as $produto)
-        {
-            // Busca a imagem
-            $produto->imagem = $this->objHelperApoio
-                ->getImagem($produto->id_produto);
-
-            // Url
-            $produto->url = BASE_URL . "p/" . $produto->id_produto . "/" . $this->objHelperApoio->urlAmigavel($produto->nome);
-        }
 
         // Dados
         $dados = [
             "usuario" => $usuario,
-            "cont" => $cont,
-            "produtos" => $produtos,
+            "usuarios" => $usuarios,
             "js" => [
-                "modulos" => ["Produto"]
+                "modulos" => ["Usuario"]
             ]
         ];
 
         // View
-        $this->view("painel/index", $dados);
+        $this->view("painel/usuario/lista", $dados);
 
     } // End >> fun::getPaginaListarProdutos()
 
