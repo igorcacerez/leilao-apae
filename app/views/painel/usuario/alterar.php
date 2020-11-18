@@ -2,7 +2,7 @@
 
 
 <!-- ============================================================== -->
-<!-- INICIO adicionar produto -->
+<!-- INICIO adicionar usuario -->
 <!-- ============================================================== -->
 <div class="content-page" style="padding-top: 140px;">
     <div class="content">

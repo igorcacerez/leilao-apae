@@ -64,3 +64,8 @@ $Rotas->on("GET","painel","Principal::painel");
 // -- PRODUTOS
 $Rotas->on("GET","produto/adicionar","Produto::adicionar");
 $Rotas->on("GET","produto/alterar/{p}","Produto::alterar");
+
+// -- USUARIOS
+$Rotas->on("GET","usuarios","Usuario::listar");
+$Rotas->on("GET","usuario/adicionar","Usuario::adicionar");
+$Rotas->on("GET","usuario/alterar/{p}","Usuario::alterar");
