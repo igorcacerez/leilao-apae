@@ -18,6 +18,22 @@
     <link rel="stylesheet" href="<?= BASE_URL; ?>assets/theme/site/css/plugins/plugins.min.css">
     <link rel="stylesheet" href="<?= BASE_URL; ?>assets/theme/site/css/style.min.css">
 
+    <link rel="stylesheet" href="<?= BASE_URL; ?>assets/custom/css/estilo.css">
+    <link rel="stylesheet" href="<?= BASE_URL; ?>assets/custom/css/responsivo.css">
+
 </head>
 
 <body>
+
+    <!-- WRAPPER -->
+    <div class="main-wrapper">
+
+        <!-- MENU -->
+        <div style="background-color: #fff; width: 100%; padding: 20px">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img src="<?= BASE_URL; ?>assets/theme/site/images/logo.png">
+                </div>
+            </div>
+        </div>
+        <!-- FIM >> MENU -->

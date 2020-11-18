@@ -1,0 +1,23 @@
+@media only screen and (max-width: 1024px)
+{
+    .banner-home
+    {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .banner-home
+    {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 425px)
+{
+    .banner-home
+    {
+        height: 250px;
+    }
+}
