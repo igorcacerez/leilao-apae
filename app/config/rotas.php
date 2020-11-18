@@ -50,7 +50,7 @@ $Rotas->on("GET","login","Principal::login");
 $Rotas->on("GET","sair","Principal::sair");
 
 // --- Detalhes do produto
-$Rotas->on("GET","produto/{p}/{p}","Produto::detalhes");
+$Rotas->on("GET","p/{p}/{p}","Produto::detalhes");
 
 /**
  * ========================================================

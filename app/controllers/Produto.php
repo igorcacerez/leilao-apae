@@ -13,7 +13,7 @@ class Produto extends Controller
 {
     // Objetos
     private $objModelProduto;
-    private $objModelImgem;
+    private $objModelImagem;
     private $objModelUsuario;
     private $objHelperApoio;
 
@@ -25,7 +25,7 @@ class Produto extends Controller
 
         // Instancia
         $this->objModelProduto = new \Model\Produto();
-        $this->objModelImgem = new Imagem();
+        $this->objModelImagem = new Imagem();
         $this->objModelUsuario = new \Model\Usuario();
         $this->objHelperApoio = new Apoio();
 
@@ -119,7 +119,7 @@ class Produto extends Controller
         if(!empty($produto))
         {
             // Busca as imagens
-            $imagens = $this->objModelImgem
+            $imagens = $this->objModelImagem
                 ->get(["id_produto" => $id])
                 ->fetchAll(\PDO::FETCH_OBJ);
 
