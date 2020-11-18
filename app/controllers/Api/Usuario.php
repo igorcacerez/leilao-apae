@@ -118,7 +118,6 @@ class Usuario extends Controller
         // Recupera os dados post
         $post = $_POST;
 
-
         // Verifica se informou os dados obrigatorios
         if(!empty($post["nome"]) &&
             !empty($post["email"]) &&
@@ -134,7 +133,7 @@ class Usuario extends Controller
                     $post["senha"] = md5($post["senha"]);
 
                     // Removendo o repete senha
-                    unset($post["repete_senha"]);
+                    unset($post["re_senha"]);
 
                     // Insere
                     $usuario = $this->objModelUsuario->insert($post);
@@ -225,7 +224,7 @@ class Usuario extends Controller
             if(!empty($put["senha"]) && !empty($put["re_senha"]))
             {
                 // Verifica se não são parecidos
-                if($put["senha"] != $put["repete_senha"])
+                if($put["senha"] != $put["re_senha"])
                 {
                     // Avisa que não são identicas
                     $this->api(["mensagem" => "Senhas informadas não são idênticas."]);

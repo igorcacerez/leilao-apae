@@ -12,11 +12,11 @@
             <div class="page-title-box">
                 <div class="row align-items-center">
                     <div class="col-sm-6">
-                        <h4 class="page-title">Inserir Produto</h4>
+                        <h4 class="page-title">Inserir Usuário</h4>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-right">
-                            <li class="breadcrumb-item"><a href="<?= BASE_URL ?>painel">Produtos</a></li>
+                            <li class="breadcrumb-item"><a href="<?= BASE_URL ?>usuarios">Usuários</a></li>
                             <li class="breadcrumb-item active">Adicionar</li>
                         </ol>
                     </div>
@@ -29,53 +29,54 @@
                     <div class="card m-b-30">
                         <div class="card-body">
 
-                            <h4 class="mt-0 header-title">Cadastrar Produtos</h4>
-                            <p class="sub-title">Cadastre um novo produto a ser leiloado.</p>
+                            <h4 class="mt-0 header-title">Cadastrar Usuário</h4>
+                            <p class="sub-title">Cadastre um novo usuário para gerenciar os produtos.</p>
 
-                            <form id="formInserirProduto" data-alerta="swal">
+                            <form id="formInserirUsuario" data-alerta="swal">
 
-                                <!-- NOME E NIVEL -->
+                                <!-- NOME E EMAIL -->
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <label>Nome do Produto</label>
+                                            <label>Nome Completo</label>
                                             <input type="text" class="form-control" name="nome" value="" required/>
                                         </div>
 
 
                                         <div class="col-md-6">
-                                            <label>Valor</label>
-                                            <input type="text" class="form-control maskValor" name="valor" value="" required/>
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" name="email" value="" required/>
                                         </div>
                                     </div>
                                 </div>
 
+                                <!-- SENHA E CONFIRMA SENHA -->
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label>Senha</label>
+                                            <input type="password" class="form-control" name="senha" value="" required/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Confirmar Senha</label>
+                                            <input type="password" class="form-control" name="re_senha" value="" required/>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                <!-- Descricao curta -->
+                                <!-- STATUS -->
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <label>Descrição curta</label>
-                                            <textarea name="descricao_curta" class="form-control" required></textarea>
+                                            <label>Status</label>
+                                            <select class="form-control" name="status" required>
+                                                <option value="1">Ativo</option>
+                                                <option value="0">Desativado</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
-
-
-                                <!-- Descricao completa -->
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <label>Descrição completa</label>
-                                            <textarea id="textarea" name="descricao" class="form-control summernote" maxlength="200" rows="3" placeholder="Descrição do produto aqui."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
                                 <button type="submit" class="btn btn-primary float-right">Cadastrar</button>
-
                             </form>
 
                         </div>
