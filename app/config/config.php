@@ -8,6 +8,6 @@ defined('BASE_STORAGE') OR define('BASE_STORAGE', 'http://localhost/git/leilao-a
 
 // Session | Caso deseje que a session seja iniciada em todas as páginas
 // Apenas mude a constante para true.
-defined("OPEN_SESSION") OR define('OPEN_SESSION', false);
+defined("OPEN_SESSION") OR define('OPEN_SESSION', true);
 
 

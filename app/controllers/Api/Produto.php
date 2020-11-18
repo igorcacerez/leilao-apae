@@ -59,8 +59,8 @@ class Produto extends Controller
             !empty($post["valor"]))
         {
             // Limpa o valor
-            $post["valor"] = str_replace(",","", $post["valor"]);
-            $post["valor"] = str_replace(".",",", $post["valor"]);
+            $post["valor"] = str_replace(".","", $post["valor"]);
+            $post["valor"] = str_replace(",",".", $post["valor"]);
 
             // Insere
             $obj = $this->objModelProduto->insert($post);
@@ -133,8 +133,8 @@ class Produto extends Controller
         if(!empty($obj))
         {
             // Limpa o valor
-            $put["valor"] = str_replace(",","", $put["valor"]);
-            $put["valor"] = str_replace(".",",", $put["valor"]);
+            $put["valor"] = str_replace(".","", $put["valor"]);
+            $put["valor"] = str_replace(",",".", $put["valor"]);
 
             // Altera e verifica
             if($this->objModelProduto->update($put, ["id_produto" => $id]) != false)

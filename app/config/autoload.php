@@ -1,10 +1,10 @@
 <?php
 
 $pluginsAutoLoad = [
-    "jquery" => [
-        "js" => ["jquery-3.4.1.min"],
-        "css" => null
-    ],
+//    "jquery" => [
+//        "js" => ["jquery-3.4.1.min"],
+//        "css" => null
+//    ],
 //    "bootstrap-grid" => [
 //        "js" => null,
 //        "css" => ["bootstrap-grid.min"]

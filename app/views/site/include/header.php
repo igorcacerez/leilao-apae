@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?= BASE_URL; ?>assets/theme/site/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://apae.com.br/apple-touch-icon.png">
 
     <link rel="stylesheet" href="<?= BASE_URL; ?>assets/theme/site/css/vendor/vendor.min.css">
     <link rel="stylesheet" href="<?= BASE_URL; ?>assets/theme/site/css/plugins/plugins.min.css">
