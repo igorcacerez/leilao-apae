@@ -2,7 +2,7 @@
     <div class="single-product-wrap mb-35">
         <div class="product-img product-img-zoom mb-20">
             <a href="<?= $produto->url; ?>">
-                <img src="<?= $produto->imagem['thumb']; ?>" alt="<?= $produto->nome; ?>">
+                <img src="<?= $produto->imagem['full']; ?>" alt="<?= $produto->nome; ?>">
             </a>
             <?php if($produto->vendido == false): ?>
                 <div class="product-action-wrap">
