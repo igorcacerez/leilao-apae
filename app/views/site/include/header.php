@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <a href="<?= BASE_URL; ?>">
-                        <img src="<?= BASE_URL; ?>assets/theme/site/images/logo.png">
+                        <img src="<?= BASE_URL; ?>assets/theme/site/images/logo.png" style="width: 260px;" />
                     </a>
                 </div>
             </div>
