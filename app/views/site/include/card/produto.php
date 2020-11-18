@@ -18,7 +18,7 @@
         <div class="product-content-wrap">
             <div class="product-content-left">
                 <h4>
-                    <a href="product-details.html">
+                    <a href="<?= $produto->url; ?>">
                         <?= mb_strimwidth($produto->nome, 0, 40, "..."); ?>
                     </a>
                 </h4>
