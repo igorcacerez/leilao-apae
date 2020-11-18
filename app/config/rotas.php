@@ -43,4 +43,4 @@ $Rotas->onGroup("api-imagem","DELETE","delete/{p}","delete");
 
 
 // -- Rotas sem grupo
-$Rotas->on("GET","","Site::index");
+$Rotas->on("GET","","Principal::index");

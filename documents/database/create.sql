@@ -27,6 +27,7 @@ CREATE TABLE produto(
     descricao TEXT NULL DEFAULT NULL,
     descricao_curta TEXT NULL DEFAULT NULL,
     valor DOUBLE NOT NULL DEFAULT 0,
+    vendido BOOLEAN NOT NULL DEFAULT false,
     PRIMARY KEY (id_produto)
 );
 
