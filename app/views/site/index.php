@@ -30,35 +30,15 @@
                     <h2 class="mb-5">Produtos</h2>
                 </div>
                 <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div class="single-product-wrap mb-35">
-                            <div class="product-img product-img-zoom mb-20">
-                                <a href="product-details.html">
-                                    <img src="<?= BASE_URL; ?>assets/theme/site/images/product/product-1.jpg" alt="">
-                                </a>
-                                <div class="product-action-wrap">
-                                    <div class="product-action-left">
-                                        <button><i class="icon-basket-loaded"></i>Add to Cart</button>
-                                    </div>
-                                    <div class="product-action-right tooltip-style">
-                                        <button data-toggle="modal" data-target="#exampleModal"><i class="icon-size-fullscreen icons"></i><span>Quick View</span></button>
-                                        <button class="font-inc"><i class="icon-refresh"></i><span>Compare</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-content-wrap">
-                                <div class="product-content-left">
-                                    <h4><a href="product-details.html">Simple Black T-Shirt</a></h4>
-                                    <div class="product-price">
-                                        <span>$56.20</span>
-                                    </div>
-                                </div>
-                                <div class="product-content-right tooltip-style">
-                                    <button class="font-inc"><i class="icon-heart"></i><span>Wishlist</span></button>
-                                </div>
-                            </div>
+                    <?php if(!empty($produtos)): ?>
+                        <?php foreach ($produtos as $prod): ?>
+                            <?php $this->view("site/include/card/produto", ["produto" => $prod]); ?>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <div class="col-md-12">
+                            <p>No momento não possui produto em leilão.</p>
                         </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

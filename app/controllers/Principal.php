@@ -53,11 +53,19 @@ class Principal extends CI_controller
         }
         else
         {
+            // Dados
+            $dados = [
+                "js" => [
+                    "modulos" => ["Usuario"]
+                ]
+            ];
+
             // View
-            $this->view("site/login");
+            $this->view("site/login", $dados);
         }
 
     } // End >> fun::login()
+
 
 
     /**
@@ -83,6 +91,9 @@ class Principal extends CI_controller
             // Busca a imagem do produto
             $produto->imagem = $this->objHelperApoio
                 ->getImagem($produto->id_produto);
+
+            // Monta a url
+            $produto->url = BASE_URL . "p/" . $produto->id_produto . "/" . $this->objHelperApoio->urlAmigavel($produto->nome);
         }
 
         // Array de retorno
@@ -118,5 +129,22 @@ class Principal extends CI_controller
         $objProduto->getPaginaListarProdutos($usuario);
 
     } // End >> fun::painel()
+
+
+    /**
+     * Método responsável por destruir a sessão do usuário
+     * logado e redirecionar para a home.
+     * -----------------------------------------------------
+     * @url sair
+     */
+    public function sair()
+    {
+        // Destroi a session
+        session_destroy();
+
+        // Redireciona para a home
+        header("Location: " . BASE_URL);
+
+    } // End >> fun::sair()
 
 } // END::Class Principal

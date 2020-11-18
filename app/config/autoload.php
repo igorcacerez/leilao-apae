@@ -9,10 +9,10 @@ $pluginsAutoLoad = [
 //        "js" => null,
 //        "css" => ["bootstrap-grid.min"]
 //    ],
-    "bootstrap" => [
-        "js" => ["js/bootstrap.min","js/popper.min"],
-        "css" => ["css/bootstrap.min"]
-    ],
+//    "bootstrap" => [
+//        "js" => ["js/bootstrap.min","js/popper.min"],
+//        "css" => ["css/bootstrap.min"]
+//    ],
     "sweetalert" => [
         "js" => ["sweetalert2.all"],
         "css" => null,
@@ -28,7 +28,16 @@ $pluginsAutoLoad = [
     "dropify" => [
         "js" => ["js/dropify.min"],
         "css" => ["css/dropify.min"],
+    ],
+    "alertify" => [
+        "js" => ["js/alertify"],
+        "css" => ["css/alertify"]
+    ],
+    "offline" => [
+        "js" => ["offline.min"],
+        "css" => ["offline","offline-pt-br"]
     ]
+
 ];
 
 // Salva como constant

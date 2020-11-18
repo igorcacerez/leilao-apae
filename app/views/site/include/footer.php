@@ -162,9 +162,12 @@
     </div>
     <!-- FIM >> WRAPPER -->
 
-<script src="<?= BASE_URL; ?>assets/theme/site/js/vendor/vendor.min.js"></script>
-<script src="<?= BASE_URL; ?>assets/theme/site/js/plugins/plugins.min.js"></script>
-<script src="<?= BASE_URL; ?>assets/theme/site/js/main.js"></script>
+    <script src="<?= BASE_URL; ?>assets/theme/site/js/vendor/vendor.min.js"></script>
+    <script src="<?= BASE_URL; ?>assets/theme/site/js/plugins/plugins.min.js"></script>
+    <script src="<?= BASE_URL; ?>assets/theme/site/js/main.js"></script>
+
+    <!-- AUTOLOAD JS -->
+    <?php $this->view("autoload/js"); ?>
 
 </body>
 

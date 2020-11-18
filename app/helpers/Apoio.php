@@ -127,4 +127,35 @@ class Apoio
 
     } // End >> fun::getImagem()
 
+
+    /**
+     * Método responsável por transformar uma string em uma url sem acentos e
+     * espaços para url amigavel.
+     * ------------------------------------------------------------------------
+     * @author thiagomorello
+     * @copyright http://thiagomorello.com/blog/2013/01/como-gerar-urls-amigaveis-perfeitamente-com-php/
+     * ------------------------------------------------------------------------
+     * @param $str
+     * @param array $replace
+     * @param string $delimiter
+     * @return false|string|string[]|null
+     */
+    public function urlAmigavel($str, $replace = array(), $delimiter = '-')
+    {
+        setlocale(LC_ALL, 'en_US.UTF8');
+
+        if( !empty($replace) ) {
+            $str = str_replace((array)$replace, ' ', $str);
+        }
+
+        $clean = iconv('UTF-8', 'ASCII//TRANSLIT', $str);
+        $clean = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $clean);
+        $clean = strtolower(trim($clean, '-'));
+        $clean = preg_replace("/[\/_|+ -]+/", $delimiter, $clean);
+
+        // Retorno
+        return $clean;
+
+    } // End >> fun::urlAmigavel()
+
 } // End >> Class::Apoio()

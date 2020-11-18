@@ -42,5 +42,21 @@ $Rotas->onGroup("api-imagem","DELETE","delete/{p}","delete");
  */
 
 
-// -- Rotas sem grupo
+// -- INDEX
 $Rotas->on("GET","","Principal::index");
+
+// -- LOGIN
+$Rotas->on("GET","login","Principal::login");
+$Rotas->on("GET","sair","Principal::sair");
+
+// --- Detalhes do produto
+$Rotas->on("GET","p/{p}/{p}","Produto::detalhes");
+
+/**
+ * ========================================================
+ *                      ROTAS DO PAINEL
+ * ========================================================
+ */
+
+// -- Painel
+$Rotas->on("GET","painel","Principal::painel");

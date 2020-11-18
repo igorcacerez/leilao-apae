@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Norda - Minimal eCommerce HTML Template</title>
+    <title>Leilão Apae Birigui</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="<?= BASE_URL; ?>assets/custom/css/estilo.css">
     <link rel="stylesheet" href="<?= BASE_URL; ?>assets/custom/css/responsivo.css">
 
+    <!-- AUTOLOAD JS -->
+    <?php $this->view("autoload/css"); ?>
+
 </head>
 
 <body>
@@ -32,7 +35,9 @@
         <div style="background-color: #fff; width: 100%; padding: 20px">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <img src="<?= BASE_URL; ?>assets/theme/site/images/logo.png">
+                    <a href="<?= BASE_URL; ?>">
+                        <img src="<?= BASE_URL; ?>assets/theme/site/images/logo.png">
+                    </a>
                 </div>
             </div>
         </div>
