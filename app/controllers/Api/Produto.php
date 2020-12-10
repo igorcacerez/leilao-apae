@@ -148,7 +148,7 @@ class Produto extends Controller
                 $dados = [
                     "tipo" => true,
                     "code" => 200,
-                    "mensgaem" => "Informações alteradas com sucesso.",
+                    "mensagem" => "Informações alteradas com sucesso.",
                     "objeto" => [
                         "antes" => $obj,
                         "atual" => $objAlterado

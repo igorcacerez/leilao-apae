@@ -61,6 +61,13 @@ $("#formAlterarProduto").on("submit", function () {
     // Bloqueia o Form
     $(this).addClass("bloqueiaForm");
 
+    if(id === 0 || id === "0")
+    {
+        id = form.get("id_produto");
+
+        form.delete("id_produto");
+    }
+
     // Url e token
     var url = Global.config.urlApi + "produto/update/" + id;
     var token = Global.session.get("token");
@@ -71,8 +78,11 @@ $("#formAlterarProduto").on("submit", function () {
             // Avisa que deu certo
             Global.setSuccess(data.mensagem);
 
-            // Desbloqueia o Form
-            $(this).removeClass("bloqueiaForm");
+            setTimeout(() => {
+
+                location.href = window.location.href;
+
+            }, 2000);
 
         })
         .catch((error) => {
@@ -84,6 +94,25 @@ $("#formAlterarProduto").on("submit", function () {
     return false;
 });
 
+
+$(".abreModalLance").on("click", function () {
+
+    // Não atualiza
+    event.preventDefault();
+
+    // Recupera o id
+    var id = $(this).data("id");
+
+    // Add o valor do id
+    $("#idProdutoVal").val(id);
+
+    // Abre a modal
+    $("#modalLance").modal("show");
+
+    // Não atualiza mesmo
+    return false;
+
+});
 
 
 /*

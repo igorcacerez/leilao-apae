@@ -78,7 +78,7 @@
                         <?php if($produto->vendido == false): ?>
                             <div class="pro-details-action-wrap">
                                 <div class="pro-details-add-to-cart">
-                                    <a style="background-color: #06cc84" title="Comprar" href="https://wa.me/<?= WHATS ?>?text=Quero dar um lance no produto (<?=  $produto->nome; ?>)">COMPRAR</a>
+                                    <a style="background-color: #06cc84" title="Comprar" href="https://wa.me/<?= WHATS ?>?text=Quero dar um lance no produto (<?=  $produto->nome; ?>)" target="_blank">DAR LANCE</a>
                                 </div>
                             </div>
                         <?php endif; ?>

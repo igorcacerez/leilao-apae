@@ -123,13 +123,12 @@
                                     <?php endif; ?>
 
                                     <td class="text-center">
-                                        <button data-id="<?= $produto->id_produto; ?>"
+                                        <!-- <button data-id="<?= $produto->id_produto; ?>"
                                                 data-toggle="tooltip"
                                                 data-original-title="Deletar Produto"
                                                 class="deletarProduto btn btn-danger btn-icon btn-sm mr-2">
                                             <i class="fas fa-window-close"></i>
-
-                                        </button>
+                                        </button> -->
 
                                         <a href="<?= BASE_URL; ?>produto/alterar/<?= $produto->id_produto; ?>"
                                            data-toggle="tooltip"
@@ -137,6 +136,14 @@
                                            class="btn btn-primary btn-icon btn-sm">
                                             <i class="far fa-edit"></i>
                                         </a>
+
+                                        <button
+                                            data-id="<?= $produto->id_produto; ?>"
+                                            data-toggle="tooltip"
+                                            data-original-title="Dar Lance"
+                                            class="btn btn-success btn-icon btn-sm abreModalLance">
+                                                DAR LANCE
+                                        </button>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
@@ -154,6 +161,50 @@
     <!-- end container-fluid -->
 </div>
 <!-- end wrapper -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="modalLance" tabindex="-1" role="dialog" aria-labelledby="modalLance" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLanceLabel">De um lance</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="formAlterarProduto" name="formAlterarProduto" data-id="0" data-alerta="swal">
+
+                    <input name="id_produto" value="" id="idProdutoVal" type="hidden" />
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Nome do Cliente</label>
+                                    <input type="text" name="cliente" class="form-control" required />
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Valor</label>
+                                    <input type="text" class="form-control maskValor" name="valor" required/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="submit" form="formAlterarProduto" class="btn btn-primary">Salvar Lance</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php $this->view("painel/include/footer"); ?>
 
