@@ -26,7 +26,13 @@
                 </h4>
 
                 <div class="product-price">
-                    <span><?= ($produto->vendido == true) ? '<b style="color: red;">VENDIDO</b>' : 'R$' . number_format($produto->valor, 2, ",","."); ?></span>
+                    <span>
+                        <?= ($produto->vendido == true) ? '<b style="color: red;">VENDIDO</b>' : 'R$' . number_format($produto->valor, 2, ",","."); ?>
+                        <?php if(!empty($produto->cliente)): ?>
+                            <span style="font-size: 0.7em;">- lance de <b><?= $produto->cliente; ?></b></span>
+                        <?php endif; ?>
+                    </span>
+
                 </div>
             </div>
         </div>

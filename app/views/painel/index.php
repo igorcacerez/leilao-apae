@@ -102,6 +102,7 @@
                             <tr>
                                 <th scope="col">IMG</th>
                                 <th scope="col">PRODUTO</th>
+                                <th scope="col">CLIENTE</th>
                                 <th scope="col">VALOR</th>
                                 <th class="text-center" scope="col">STATUS</th>
                                 <th class="text-center" scope="col">AÇÕES</th>
@@ -114,6 +115,13 @@
                                         <img src="<?= $produto->imagem['thumb']; ?>" style="width: 70px;" />
                                     </td>
                                     <td><?= $produto->nome ?></td>
+                                    <td>
+                                        <?php if(!empty($produto->cliente)): ?>
+                                            <?= $produto->cliente; ?>
+                                        <?php else: ?>
+                                            -
+                                        <?php endif; ?>
+                                    </td>
                                     <td>R$<?= number_format($produto->valor, 2, ',','.'); ?></td>
 
                                     <?php if ($produto->vendido == 1) : ?>
